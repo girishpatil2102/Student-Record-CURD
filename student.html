@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="border mt-5 p-3">
+                    <h3 class="mt-2">Student Information Form</h3>
+                    <form id="studentForm" method="post" class="mt-2">
+                        <input type="hidden" name="id" value="0">
+                    <div class="mb-3">
+                        <label>Name</label>
+                        <input type="text" name="txtName" placeholder="Enter full name" class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label>Mobile No</label>
+                        <input type="text" name="txtMobile" placeholder="Enter Mobile No." class="form-control">
+                    </div>
+                    <div class="mb-3">
+                        <label>Address</label>
+                        <textarea placeholder="Enter Address" name="txtAddress" class="form-control"></textarea>
+                    </div>
+                    <div class="mb-3">
+                        <label>Blood Group</label>
+                        <select name="ddlBlood" class="form-select">
+                            <option>A+</option>
+                            <option>A-</option>
+                            <option>O+</option>
+                            <option>O-</option>
+                            <option>B+</option>
+                            <option>B-</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label>Gender</label><br>
+                        <label class="me-3">
+                            <input type="radio" class="me-2" name="gender" value="Male">Male
+                        </label>
+                        <label class="me-3">
+                            <input type="radio" class="me-2" name="gender" value="Female">Female
+                        </label>
+                        <label>
+                            <input type="radio" class="me-2" name="gender" value="Others">Others
+                        </label>                          
+                    </div>
+                    <div class="mb-3">
+                        <label>Education Details</label><br>
+                        <label class="me-3">
+                            <input type="checkbox" class="me-2" name="educationDetails" value="SSC">SSC
+                        </label>
+                        <label class="me-3">
+                            <input type="checkbox" class="me-2" name="educationDetails" value="HSC">HSC
+                        </label>
+                        <label class="me-3">
+                            <input type="checkbox" class="me-2" name="educationDetails" value="BE">BE
+                        </label> 
+                        <label class="me-3">
+                            <input type="checkbox" class="me-2" name="educationDetails" value="ME">ME
+                        </label>
+                        <label class="me-3">
+                            <input type="checkbox" class="me-2" name="educationDetails" value="BSc">BSc
+                        </label>
+                        <label class="me-3">
+                            <input type="checkbox" class="me-2" name="educationDetails" value="MSc">MSc
+                        </label>
+                        <label class="me-3">
+                            <input type="checkbox" class="me-2" name="educationDetails" value="BCA">BCA
+                        </label> 
+                        <label class="me-3">
+                            <input type="checkbox" class="me-2" name="educationDetails" value="MCA">MCA
+                        </label>                           
+                    </div><hr>
+                    <div class="d-flex gap-3 justify-content-center">
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="reset" class="btn btn-warning">Reset</button>
+                    </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-8">
+                <table class="table table-bordered mt-5">
+                    <thead>
+            <tr>
+                <th>Sr. No.</th>
+                <th>Name</th>
+                <th>Mobile</th>
+                <th>Address</th>
+                <th>Blood Group</th>
+                <th>Gender</th>
+                <th>Education Details</th>
+                <th>Actions</th>
+            </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td colspan="8" class="text-center">No Data Available</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="student.js"></script>
+</body>
+</html>
